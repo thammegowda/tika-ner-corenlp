@@ -1,4 +1,5 @@
 # Stanford CoreNLP addon for Apache Tika's NER Parser
+
 This project provides bridges Stanford CoreNLP's NER classifiers to Apache Tika.
 
 
