@@ -1,0 +1,5 @@
+target/
+*.iml
+*~
+src/main/resources/edu/stanford/nlp/models/
+
