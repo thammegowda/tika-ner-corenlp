@@ -1,28 +1,36 @@
 # Stanford CoreNLP addon for Apache Tika's NER Parser
 
-This project provides bridges Stanford CoreNLP's NER classifiers to Apache Tika.
+This project supplies an implementation of Apache Tika's `NERecogniser` based on Stanford CoreNLP's NER classifiers.
 
-
-# requires
+# Requirements
 
 + newer maven - tested on maven 3.3
 + newer JDK - Tested on JDK 1.8
-+ (Other dependencies will be fetched from Maven repositories)
++ (Other dependencies will be fetched from Maven repositories, requires internet)
 
-# how to build :
+# How to Build :
 
 + to get jar for dropping into tika's classpath  
  `mvn clean compile assembly:single -PtikaAddon`
  
 + To test :
  `mvn exec:java -Dexec.args=README.md`
+   NOTE: README.md is a CLI argument
 
 # How to configure tika
   
-  1. Get the jar obtained in previous step (`target/tika-ner-corenlp-addon-1.0-SNAPSHOT-jar-with-dependencies.jar`) and add it 
-  to tika's classpath (requires Tika 1.12).
+  1. Get the jar obtained in previous step (`target/tika-ner-corenlp-addon-1.0-SNAPSHOT-jar-with-dependencies.jar`) and add it to tika's classpath (requires Tika 1.12).
+> Alternatively, it is simple if your are using maven.
+>>+ Build and install this project to local maven repo by running `mvn install` on this project
+>>+ Add this dependency to your project
+    ```xml
+    <dependency>
+     <groupId>edu.usc.ir.tika</groupId>
+     <artifactId>tika-ner-corenlp</artifactId>
+     <version>1.0-SNAPSHOT</version>
+    </dependency>
+    ```
 
-  
   2. Set a system property `ner.impl.class` to `edu.usc.cs.ir.tika.ner.corenlp.CoreNLPNERecogniser`.
      An example usage is shown in test case `src/test/java/edu/usc/cs/ir/tika/ner/NamedEntityParserTest.java`
 
