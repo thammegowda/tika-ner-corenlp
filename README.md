@@ -1,6 +1,6 @@
 # Stanford CoreNLP addon for Apache Tika's NER Parser
 
-This project supplies an implementation of Apache Tika's `NERecogniser` based on Stanford CoreNLP's NER classifiers.
+This project supplies necessary resources to Apache Tika's `NamedEntityParser` and demonstrates how to activate the NER implementation based on Stanford CoreNLP's CRF classifiers.
 
 # Requirements
 
@@ -31,10 +31,10 @@ This project supplies an implementation of Apache Tika's `NERecogniser` based on
     </dependency>
     ```
 
-  2. Set a system property `ner.impl.class` to `edu.usc.cs.ir.tika.ner.corenlp.CoreNLPNERecogniser`.
-     An example usage is shown in test case `src/test/java/edu/usc/cs/ir/tika/ner/NamedEntityParserTest.java`
+  2. Set system property `ner.impl.class` to `org.apache.tika.parser.ner.corenlp.CoreNLPNERecogniser`.
+     An example usage is shown in test case [`NamedEntityParserTest.java`](src/test/java/edu/usc/cs/ir/tika/ner/NamedEntityParserTest.java)
 
-  3. Activate `org.apache.tika.parser.ner.NamedEntityParser`. An example configuration is at `src/main/resources/tika-config.xml`
+  3. Activate `org.apache.tika.parser.ner.NamedEntityParser`. An example configuration is at [src/main/resources/tika-config.xml](src/main/resources/tika-config.xml)
 
 
 # Contributors :
