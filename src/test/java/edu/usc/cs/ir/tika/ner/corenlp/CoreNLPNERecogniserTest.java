@@ -1,6 +1,7 @@
 package edu.usc.cs.ir.tika.ner.corenlp;
 
 import org.apache.tika.parser.ner.NERecogniser;
+import org.apache.tika.parser.ner.corenlp.CoreNLPNERecogniser;
 import org.junit.Test;
 
 import java.util.Map;

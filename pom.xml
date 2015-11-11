@@ -120,10 +120,9 @@
             </build>
         </profile>
         <profile>
-            <!-- Automatically activated to download models on first time-->
-            <id>getModel</id>
+            <id>getModels</id>
             <activation>
-                <file>
+                <file>  <!-- Automatically activated to download models on first time-->
                     <missing>${basedir}/src/main/resources/edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz</missing>
                 </file>
             </activation>
@@ -141,14 +140,14 @@
                         <artifactId>gmaven-plugin</artifactId>
                         <executions>
                             <execution>
-                                <id>get-models</id>
+                                <id>getModels</id>
                                 <phase>process-classes</phase>
                                 <goals>
                                     <goal>execute</goal>
                                 </goals>
 
                                 <configuration>
-                                    <source>${basedir}/src/main/groovy/ModelGetter.groovy</source>
+                                    <source>${basedir}/src/main/resources/ModelGetter.groovy</source>
                                 </configuration>
                             </execution>
                         </executions>

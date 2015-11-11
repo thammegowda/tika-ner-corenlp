@@ -18,11 +18,11 @@
 
 package edu.usc.cs.ir.tika.ner;
 
-import edu.usc.cs.ir.tika.ner.corenlp.CoreNLPNERecogniser;
 import org.apache.tika.Tika;
 import org.apache.tika.config.TikaConfig;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.ner.NamedEntityParser;
+import org.apache.tika.parser.ner.corenlp.CoreNLPNERecogniser;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
