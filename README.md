@@ -2,6 +2,8 @@
 
 This project supplies necessary resources to Apache Tika's `NamedEntityParser` and demonstrates how to activate the NER implementation based on Stanford CoreNLP's CRF classifiers.
 
+The usage of this addon has been documented at http://wiki.apache.org/tika/TikaAndNER#Using_Stanford_CoreNLP_NER
+
 # Requirements
 
 + newer maven - tested on maven 3.3
