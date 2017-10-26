@@ -141,7 +141,7 @@
                         <executions>
                             <execution>
                                 <id>getModels</id>
-                                <phase>process-resources</phase>
+                                <phase>generate-resources</phase>
                                 <goals>
                                     <goal>execute</goal>
                                 </goals>
