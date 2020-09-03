@@ -95,7 +95,7 @@ modelPath = "src/main/resources/edu/stanford/nlp/models/ner/english.muc.7class.d
 modelFile = new File(modelPath)
 if (!modelFile.exists()) {
     println "File $modelFile doesnt exists. Going to get NER Models."
-    modelsUrlStr = "http://central.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.6.0/stanford-corenlp-3.6.0-models.jar"
+    modelsUrlStr = "https://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.6.0/stanford-corenlp-3.6.0-models.jar"
     file = File.createTempFile("corenlp-models", ".tmp")
     file.deleteOnExit()
     downloadFile(modelsUrlStr, file)
