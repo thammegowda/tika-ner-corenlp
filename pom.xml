@@ -13,7 +13,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <corenlp.version>3.6.0</corenlp.version>
+        <corenlp.version>4.4.0</corenlp.version>
         <junit.version>4.12</junit.version>
         <slf4j.version>1.7.12</slf4j.version>
         <tika.version>1.14</tika.version>
